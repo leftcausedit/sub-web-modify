@@ -412,10 +412,11 @@
 <script>
 const project = process.env.VUE_APP_PROJECT
 const configScriptBackend = process.env.VUE_APP_CONFIG_UPLOAD_BACKEND + '/api.php'
-const remoteConfigSample = process.env.VUE_APP_SUBCONVERTER_REMOTE_CONFIG
+const remoteConfigSample = process.env.VUE_APP_SUBCONVERTER_REMOTE_CONFIG_SAMPLE
 const scriptConfigSample = process.env.VUE_APP_SCRIPT_CONFIG
 const filterConfigSample = process.env.VUE_APP_FILTER_CONFIG
 const defaultBackend = process.env.VUE_APP_SUBCONVERTER_DEFAULT_BACKEND
+const defaultConfig = process.env.VUE_APP_SUBCONVERTER_DEFAULT_CONFIG
 const shortUrlBackend = process.env.VUE_APP_MYURLS_DEFAULT_BACKEND + '/short'
 const configUploadBackend = process.env.VUE_APP_CONFIG_UPLOAD_BACKEND + '/sub.php'
 const basicVideo = process.env.VUE_APP_BASIC_VIDEO
@@ -472,6 +473,7 @@ export default {
           "sub作者&lhie1提供": "https://api.dler.io",
         },
         backendOptions: [
+          {value: "https://sub.leftcuz.top:8443"},
           {value: "https://api.v1.mk"},
           {value: "https://sub.d1.mk"},
           {value: "https://api.tsutsu.one"},
@@ -874,9 +876,9 @@ export default {
       form: {
         sourceSubUrl: "",
         clientType: "",
-        customBackend: this.getUrlParam() == "" ? "https://sub.leftcuz.top:8443" : this.getUrlParam(),
+        customBackend: this.getUrlParam() == "" ? defaultBackend : this.getUrlParam(),
         shortType: "https://v1.mk/short",
-        remoteConfig: "https://alist.leftcuz.top:8443/d/Config/subconverter/lefty/main.ini",
+        remoteConfig: defaultConfig,
         excludeRemarks: "",
         includeRemarks: "",
         filename: "",
