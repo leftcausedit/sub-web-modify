@@ -487,7 +487,7 @@ export default {
             label: "通用",
             options: [
               {
-                label: "默认",
+                label: "lefty-main.ini",
                 value: "https://alist.leftcuz.top:8443/d/Config/subconverter/lefty/main.ini"
               },
               {
