@@ -462,6 +462,7 @@ export default {
           "sub.cm": "https://sub.cm/short",
         },
         customBackend: {
+          "lefty":"https://sub.leftcuz.top:8443",
           "肥羊增强型后端【vless+hysteria】": "https://api.v1.mk",
           "肥羊备用后端【vless+hysteria】": "https://sub.d1.mk",
           "つつ-多地防失联【负载均衡+国内优化】": "https://api.tsutsu.one",
@@ -485,7 +486,7 @@ export default {
             options: [
               {
                 label: "默认",
-                value: "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/config/ACL4SSR_Online_Full_NoAuto.ini"
+                value: "https://alist.leftcuz.top:8443/d/Config/subconverter/lefty/main.ini"
               },
               {
                 label: "默认（自动测速）",
