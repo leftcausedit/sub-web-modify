@@ -456,6 +456,7 @@ export default {
           "自动判断客户端": "auto",
         },
         shortTypes: {
+          "lefty": "https://su.leftcuz.top:8443/short",
           "v1.mk": "https://v1.mk/short",
           "d1.mk": "https://d1.mk/short",
           "dlj.tf": "https://dlj.tf/short",
@@ -877,7 +878,7 @@ export default {
         sourceSubUrl: "",
         clientType: "",
         customBackend: this.getUrlParam() == "" ? defaultBackend : this.getUrlParam(),
-        shortType: "https://v1.mk/short",
+        shortType: shortUrlBackend,
         remoteConfig: defaultConfig,
         excludeRemarks: "",
         includeRemarks: "",
